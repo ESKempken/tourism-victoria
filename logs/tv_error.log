@@ -1,0 +1,13 @@
+SQL Error: Unknown column 'hight' in 'field list'
+SQL Error: Unknown column 'hight' in 'field list'
+SQL Error: Table 'tourism_victoria.mual' doesn't exist
+SQL Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' height, location, description, image, artist) VALUES('Stencil', '1.6', '3.2', '' at line 1
+SQL Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' height, location, description, image, artist) VALUES('Throw-up, tag, or other',' at line 1
+SQL Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' height, location, description, image, artist) VALUES('Throw-up, tag, or other',' at line 1
+SQL Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' height, location, description, image, artist) VALUES('Stencil', '12.4', '2.0', ' at line 1
+SQL Error: Data too long for column 'location' at row 1
+SQL Error: Data too long for column 'location' at row 1
+SQL Error: Data truncated for column 'width' at row 1
+SQL Error: Unknown column 'wdth' in 'field list'
+SQL Error: Unknown column 'hight' in 'field list'
+SQL Error: Unknown column 'hight' in 'field list'

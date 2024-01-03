@@ -1,0 +1,343 @@
+/* Generic website style
+/*Theme*/
+body{
+    background: rgb(58, 58, 58);
+    font-family: verdana, arial sans-serif;
+    width: 70%;
+    margin: 0px auto;
+    padding: 0px;
+}
+.tile {
+    background: rgb(223, 223, 223);
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+
+/*fonts*/
+h3 {
+    font-size: 17px;
+    font-style: normal;
+    color:black;
+}
+h2 {
+    font-size: 12px;
+    color:black;
+}
+
+::placeholder {
+    color: rgb(84, 120, 139);
+    opacity: 1;
+  }
+
+input[type='text'],textarea, label, select, div{
+    font-size: 13px;
+    color: rgb(19, 47, 61);
+}
+a:link, a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*styles for forms page*/
+#muralForm {
+    overflow: visible;
+    display:grid;
+    grid-template-columns: 34% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'Head Head Head'
+        'M W H'
+        'M1 W1 H1'
+        'L L P'
+        'L1 L1 P1'
+        'D D D'
+        'D1 D1 D1'
+        'I I I'
+        'I1 I1 I2'
+        'A A A'
+        'A1 A1 A1'
+        'sub sub sub';
+}
+.header{ grid-area: Head}
+.muraltype{ grid-area: M}
+#muraltype{ grid-area: M1}
+.width{ grid-area: W}
+.height{ grid-area: H}
+#width{ grid-area: W1}
+#height{ grid-area: H1}
+.location{ grid-area: L}
+#location{ grid-area: L1}
+.price{ grid-area: P}
+#price{ grid-area: P1}
+.description{ grid-area: D}
+#description{ grid-area: D1}
+.image { grid-area: I}
+#image { grid-area: I1}
+#imageError{ grid-area: I2}
+.artist{ grid-area: A}
+#artist{ grid-area: A1}
+
+#muralForm label {
+    margin: 10px 5px 5px 5px;
+}
+input[type='file'], #imageError {  
+    margin: 0px 5px 10px 5px;
+}
+#imageError {
+    text-align: right;
+}
+input[type='text'],textarea, select {
+    padding: 5px;
+    background-color: rgb(143, 166, 182);
+    border: 0px;
+    border-radius: 3px;
+    margin: 0px 5px 10px 5px;
+}
+input[type='submit']{
+    margin: 15px auto 5px auto;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    grid-area: sub;
+}
+input[type='submit']:hover, .return:hover {
+    background-color: rgb(143, 166, 182);
+}
+
+/*Thank you page*/
+
+.return{ 
+    background-color:white;
+    width: 55px;
+    text-align: center;
+    display: block;
+    margin: 30px auto 5px auto;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+/* Banner */
+
+.banner {
+width: 100%;
+height: 150px;
+object-fit: cover;
+margin: 0px;
+padding: 0px;
+vertical-align: bottom;
+background-image: url('../images/website_images/bannerImage-large.png');
+background-position: 35% 25%;
+background-size: cover;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    background-color: rgb(148, 145, 145);
+    margin: 0px;
+    padding:10px 30px;
+    height: 60px;
+}
+nav div {
+    width: 50%;
+    height:100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Nav Head */
+.nav_main h3 {
+    margin: 0px;
+}
+
+/* Nav Pages */
+.nav_main ul {
+    position: absolute;
+    bottom: 0px;
+    margin: 0px;
+    padding:0px;
+    width: fit-content;
+}
+.nav_main ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 10px 10px 0px;
+    background-color: rgb(143, 166, 182);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Nav Filters */
+.nav_filters {
+    height: 100%;
+    overflow: hidden;
+}
+.nav_filters form {
+    float:right;
+    padding: 0px;
+    margin-bottom: 10px;
+    height: 25px;
+    min-width: 300px;
+    width: 70%;
+    display:grid;
+    grid-template-columns: 1fr 70px;
+}
+
+.nav_filters form input, .nav_filters form select {
+    padding: 0px 5px;
+    margin: 0px;
+    max-width: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+.nav_filters form button {
+    padding: 0px 8px;
+    margin: 0px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    text-align: left;
+    background: rgb(223, 223, 223);
+}
+
+
+
+
+
+/* Home content */
+
+.record_grid {
+    list-style: none;
+    margin: 0px;
+    margin-top: 30px;
+    padding: 0px;
+    display: grid;
+    grid-gap:30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.record_grid li {
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 3px 3px 3px 3px;
+
+}
+.grid_name {
+    color: rgb(0, 0, 0);
+    margin:0px;
+    padding: 8px 10px;
+
+}
+
+.grid_image {
+    background-size:cover;
+}
+.read_more {
+    background-color: rgb(255, 255, 255);
+    color: rgb(19, 47, 61);
+    position: absolute;
+    bottom: 0px;
+    margin:0px;
+    padding:8px 10px;
+    border-radius: 0px 10px 0px 0px;
+}
+
+
+/*styles for form*/
+
+/* form{
+    width: 500px;
+    font-family: verdana, arial sans-serif;
+    border: solid 1px #000;
+    margin: 120px auto;
+    padding: 20px;
+}
+label{
+    display:block;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+input[type='submit']{
+    display: block;
+    margin-top: 30px;
+} */
+.location, .desc {
+    width:100%;
+}
+.img_details {
+    width:100%;
+    vertical-align: bottom;
+}
+.specs {
+    list-style: none;
+    padding:0px;
+}
+.specs li {
+    display:inline-block;
+    width: 150px;
+}
+.specs li p {
+    display:inline-block;
+}
+
+
+/* Search */
+.search_grid {
+    overflow: visible;
+    display:grid;
+    grid-gap:30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ 
+}
+.search_grid section {
+    position: relative;
+    height: fit-content;
+}
+
+/* footer */
+footer p {
+    color: rgb(148, 145, 145);
+    font-size: 11px;
+    margin: 5px 0px;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 1080px) {
+    nav {
+        padding:10px 10px;
+    }
+    .nav_main {
+        width: 75%;
+    }
+    .nav_filters {
+        width: 25%;
+        overflow: hidden;
+    }
+    .nav_filters form {
+        grid-template-columns: 1fr 25px;
+    }
+    
+    .nav_filters form input, .nav_filters form select {
+        min-width: 10px;
+        /* width: inherit; */
+    }
+    .nav_filters form button {
+        text-indent: 200%;
+        overflow: hidden;
+        background-image: url('../images/website_images/searchIcon.png');
+        background-size: contain;
+        background-position: 35% center;
+
+    }
+    
+    
+  }
